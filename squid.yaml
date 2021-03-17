@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-	name: squid-pod
+    name: squid-pod
 spec:
-	containers:
-	- name: squid
-	  image: sushilmax93/squid:v0.1
-          securityContext:
-		privileged: true
-	  command:
-	  - sh
-	  - -c
-	  - /usr/sbin/init
-
+    containers:
+    - name: squid
+      image: sushilmax93/squid:v0.1
+      securityContext:
+        privileged: true
+      command:
+      - sh
+      - -c
+      - /usr/sbin/init
